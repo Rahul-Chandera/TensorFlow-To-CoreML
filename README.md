@@ -1,7 +1,5 @@
 # TensorFlow-To-CoreML
-In this sample, I am demonstrating how to convert TensorFlow model to CoreML model.
-
-I am assuming that you already trained your model with TensorFlow for image classification, and you already have .pb and .txt file which TensorFlow generates after completion of training.
+In this sample, I am demonstrating how to convert TensorFlow model to CoreML model.  I am assuming that you already trained your model with TensorFlow for image classification, and you already have .pb and .txt file which TensorFlow generates after completion of training.
 
 Generally if you want to use TensorFlow model directly with iOS, you have to integrate TensorFlow lite sdk, which is little bit complex and will also increate your ipa file size. So I prefer to use native [Vision](https://developer.apple.com/documentation/vision) framework to perform machine learning tasks. Vision framework only supports mlmodel, so you have to convert your .pb file into .mlmodel file.
 
