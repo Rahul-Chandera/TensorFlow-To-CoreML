@@ -20,7 +20,7 @@ tf_model_path = "./graph.pb"
 class_labels = "./labels.txt"
 
 # Convert Process
-coreml_model = tfcoreml.convert(
+tfcoreml.convert(
     tf_model_path=tf_model_path,
     mlmodel_path=coreml_model_file,
     input_name_shape_dict=input_tensor_shapes,
@@ -29,7 +29,7 @@ coreml_model = tfcoreml.convert(
     class_labels=class_labels,
 )
 
-# coreml_model = tfcoreml.convert(
+# tfcoreml.convert(
 #         tf_model_path=tf_model_path,
 #         mlmodel_path=coreml_model_file,
 #         input_name_shape_dict=input_tensor_shapes,
